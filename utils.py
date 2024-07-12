@@ -20,7 +20,7 @@ def ML_prediction(model_select, input_data):
         ss_X = pickle.load(f)
     with open('./predictionModel/ss_Y.pkl', 'rb') as f:
         ss_Y = pickle.load(f)
-    path = os.path.join('.\predictionModel', 'model_'+model_select+'.pkl')
+    path = os.path.join('./predictionModel', 'model_'+model_select+'.pkl')
     with open(path, 'rb') as f_model:
         ML_model = pickle.load(f_model)
 
